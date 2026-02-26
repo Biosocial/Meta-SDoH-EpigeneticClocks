@@ -3,12 +3,17 @@ Social determinants of health and epigenetic clocks: A Systematic review and met
 
 
 ## Authors
-- [Yayouk Willems], [Affiliation]
-- [Co-author Full Name], [Affiliation]
-- [Co-author Full Name], [Affiliation]
+- Yayouk Willems*, Max Planck Research Group Biosocial - Max Planck Institute for Human Development
+- Ada Rezaki*, Max Planck Research Group Biosocial - Max Planck Institute for Human Development
+- Muna Aikins,  Max Planck Research Group Biosocial - Max Planck Institute for Human Development
+- Aanya Bahl, Robert N Butler Columbia Aging Center and Department of Epidemiology - Columbia University Mailman School of Public Health
+- Qiao Wu, Max Planck Research Group Biosocial - Max Planck Institute for Human Development
+- Laurel Raffington, Max Planck Research Group Biosocial - Max Planck Institute for Human Development
 
-Correspondence: [your email]
+* These authors contributed equally
 
+
+Correspondence: Laurel Raffington, raffington@mpib-berlin.mpg.de
 ---
 
 ## Associated Publication
@@ -20,19 +25,19 @@ This repository accompanies the manuscript:
 [Authors]. ([Year]). *[Title of paper]*. [Journal Name].  
 DOI: https://doi.org/[DOI]
 
-Status: [Published / In press / Under review at Journal Name]
+Status: Under Review at Nature Human Behavior
 
 ---
 
 ## Project Description
 
+Social determinants of health - such as socioeconomic status (SES) and race/ethnicity - strongly shape health. Individuals with lower SES or marginalized identities experience earlier onset of disease and shorter lifespans. “Epigenetic clocks” measure biological aging and are increasingly used to study healthy aging, yet it remains unclear which clocks are most sensitive to social inequality. We conducted a preregistered systematic review and meta-analysis of 140 studies (N = 65,919; 1,065 effect sizes) testing associations of SES and race/ethnicity with three generations of clocks. PubMed, PsycINFO, Web of Science, med/bioRxiv were searched through September 2025. Eligible studies included empirical articles in English published since 2013 on non-clinical populations reporting at least one relevant association. Associations between SES and biological aging varied across different generations of epigenetic clocks (F(2) =178,10, p<.001): with weakest effects for first-generation clocks (r = –0.03, 95%CI [-0.04, -0.01], p< .001) and stronger for second-(r=–0.11, 95%CI[-0.12, -0.09], p< .001) and third-generation clocks (r = –0.13, 95% CI [-0.15, -0.11], p < .001]). Sex, tissue, and array minimally modified results, and publication bias was negligible. Limitations include inconsistent reporting of technicalities and overrepresentation of data from high-income countries.Findings indicate newer clocks are more responsive to social inequality.
+
 This repository contains the code and summary-level data used to conduct the meta-analysis described in the manuscript above.
 
 The repository includes:
 
-- Scripts for data preparation  
 - Scripts for performing the meta-analysis  
-- Scripts for generating tables and figures  
 - Supplementary material containing the meta-analysis input data  
 
 ---
@@ -41,7 +46,7 @@ The repository includes:
 
 The meta-analysis input data are provided in:
 
-`supplemental_tables.xlsx`
+`Supplemental Tables_SDoHClocks.xlsx`
 
 Specifically:
 - **Supplementary Table 7 (Tab 39)** contains the summary-level data used as input for the meta-analysis.
@@ -50,64 +55,6 @@ Specifically:
 
 All summary statistics originate from previously published cohort-level analyses as cited in the manuscript.
 
----
-
-## Repository Structure
-
-```
-code/
-  01_prepare_data.R
-  02_run_meta_analysis.R
-  03_generate_tables_figures.R
-
-data/
-  supplemental_tables.xlsx
-
-results/
-  meta_outputs/
-  figures/
-  tables/
-```
-
----
-
-## Reproducibility
-
-To reproduce the analyses:
-
-1. Clone or download this repository.
-2. Open R (version [X.X.X]).
-3. Install required packages:
-
-   - metafor
-   - tidyverse
-   - readxl
-   - [other packages]
-
-4. Run scripts in the following order:
-
-```
-code/01_prepare_data.R
-code/02_run_meta_analysis.R
-code/03_generate_tables_figures.R
-```
-
-Results will be generated in the `/results` directory.
-
----
-
-## Software Environment
-
-Analyses were conducted using:
-
-- R version [X.X.X]
-- Key packages:
-  - metafor
-  - dplyr
-  - readxl
-  - [other packages]
-
-(Optional: paste `sessionInfo()` here for full reproducibility.)
 
 ---
 
@@ -129,5 +76,16 @@ If you use this code or data, please cite:
 
 ## Acknowledgements
 
-[Funding sources, grants, lab name, collaborators, etc.]
+We would like to thank Dr. Wei Perng, Dr. Anna Kankaanpää, Dr. Joanne Ryan, Dr. Zachary Harvanek, Dr. Rajita Sinha, Dr. Maja Popovic, Dr. Thais Lopes de Oliveira, Dr. Sara Hägg, Dr. Joseph Allen, Dr. Daniel McCartney, Dr. Riccardo Marioni, Dr. Tiina Föhr, Dr. Tiffany Powell-Wiley, Julia Nakamura, Dr. Juulia Jylhävä, Abby Hillmann, Dr. Steven Beach, Dr. Chris Verschoor, Dr. May Ahmad Baydoun, Dr. Brooke Gavin McKenna, Dr. Erin Dunn, Dr. Paige Hulls, Dr. Rebecca Richmond, Dr. Jane Maddock, Dr. Erika Wolf, Dr. Natan Yusupov, Dr. Idan Shalev, Dr. Giovanni Fiorito, Dr. Brian Joyce, Dr. Divya Joshi, Dr. Parminder Raina, Dr. Cathal McCrory, Dr. Mariona Bustamante, Dr. Dan Eisenberg, Dr. Larissa Strath, Dr. Yenisel Cruz-Almeida, Dr. Nancy Krieger and Nykesha Johnson for sharing their results with us. 
 
+---
+
+## Conflicts of interest
+
+DWB is an inventor of DunedinPACE, a Duke University and University of Otago invention licensed to Tru Diagnostic. DunedinPACE is freely available to researchers.
+
+---
+
+## Funding
+
+YW, AR, MA, QW, and LR received funding from the Max Planck Society. YW received funding from the European Union’s Horizon Europe research and innovation program under the Marie Skłodowska-Curie grant agreement (#101150809 – EpiSoDi). LR received funding from the National Institutes of Health grant 1R01HD114724. YW and LR are part of the European Union, project #101073237 – ESSGN. DWB and LR were supported by the Jacobs Foundation. DWB is a fellow of the CIFAR CBD Network. DWB is supported in part by US NIH grant R01AG073402.
