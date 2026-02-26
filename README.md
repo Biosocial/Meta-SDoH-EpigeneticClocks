@@ -10,10 +10,10 @@ Social determinants of health and epigenetic clocks: A Systematic review and met
 - Qiao Wu, Max Planck Research Group Biosocial - Max Planck Institute for Human Development
 - Laurel Raffington, Max Planck Research Group Biosocial - Max Planck Institute for Human Development
 
-* These authors contributed equally
-
+These authors contributed equally *
 
 Correspondence: Laurel Raffington, raffington@mpib-berlin.mpg.de
+
 ---
 
 ## Associated Publication
